@@ -3,6 +3,7 @@ Which Statistical Test Should I use?
 author: Hank
 date: 1/29/2016
 transition: rotate
+font-family: 'Helvetica'
 
 Problem
 ========================================================
@@ -21,24 +22,26 @@ Stat test App
 - We even include 2 examples with sample data that show linear regression and a t-test from sample datasets. We also show what are the relevant test statistics and p-values.
 t-test example
 ========================================================
-- Our mtcars data requires a t-test is because our dependent var "mpg" is numeric, while the independent var "am" is categorical. The data is normal and unpaired.
+- <small> Our mtcars data requires a t-test is because our dependent var "mpg" is numeric, while the independent var "am" is categorical. The data is normal and unpaired. </small> 
 
-![plot of chunk unnamed-chunk-1](pitch-figure/unnamed-chunk-1-1.png)
 
 ```
 [1] "p = 0.000285 , t stat = -4.11"
 ```
 
+![plot of chunk unnamed-chunk-1](pitch-figure/unnamed-chunk-1-1.png)
+
 
 Linear regression and Pearson's r example
 ========================================================
-- When your variables are numeric, without defined groups, we use linear regression and pearson's r to assess the data.
+- <small> When your variables are numeric, without defined groups, we use linear regression and pearson's r to assess the data. </small> 
 
-![plot of chunk unnamed-chunk-2](pitch-figure/unnamed-chunk-2-1.png)
 
 ```
 [1] "r = 0.81 , intercept: 8.3 , slope: 0.17"
 ```
+
+![plot of chunk unnamed-chunk-2](pitch-figure/unnamed-chunk-2-1.png)
 
  
  

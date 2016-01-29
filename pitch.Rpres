@@ -3,6 +3,7 @@ Which Statistical Test Should I use?
 author: Hank
 date: 1/29/2016
 transition: rotate
+font-family: 'Helvetica'
 
 Problem
 ========================================================
@@ -21,23 +22,25 @@ Stat test App
 - We even include 2 examples with sample data that show linear regression and a t-test from sample datasets. We also show what are the relevant test statistics and p-values.
 t-test example
 ========================================================
-- Our mtcars data requires a t-test is because our dependent var "mpg" is numeric, while the independent var "am" is categorical. The data is normal and unpaired.
+- <small> Our mtcars data requires a t-test is because our dependent var "mpg" is numeric, while the independent var "am" is categorical. The data is normal and unpaired. </small> 
 
 ```{r, echo=FALSE}
 mpgData <- subset(mtcars, select=c("am", "mpg"))
 mpgData$am <- factor(mpgData$am, labels = c("Automatic", "Manual"))
-plot(mpgData)
 paste("p =",signif(t.test(mpgData$mpg~mpgData$am, var.equal = TRUE)$p.value, 3), ", t stat =", signif(t.test(mpgData$mpg~mpgData$am, var.equal = TRUE)$statistic,3))
+plot(mpgData)
+
 ```
 
 
 Linear regression and Pearson's r example
 ========================================================
-- When your variables are numeric, without defined groups, we use linear regression and pearson's r to assess the data.
+- <small> When your variables are numeric, without defined groups, we use linear regression and pearson's r to assess the data. </small> 
 
 ```{r, echo=FALSE}
-plot(cars)
 paste("r =",signif(cor(cars$speed, cars$dist),2), ", intercept:", signif(lm(cars)$coefficients[[1]],2), ", slope:", signif(lm(cars)$coefficients[[2]],2))
+plot(cars)
+
 ```
 
  
