@@ -1,14 +1,11 @@
-Which Statistical Test Should I Use?
-============
 
-# by Hank Cheng
 
 This application is like a cheat sheet for people who are wondering what statistical tests they should use for their collected data
 
 
 It is extremely simple to use, given the user has a basic understanding of statistics and data.
 
-# Viewing the examples
+#### Viewing the examples
 
 First, users can decide whether to view 2 examples:
         * linreg
@@ -16,7 +13,7 @@ First, users can decide whether to view 2 examples:
 by checking the appropriate radio button and clicking submit. The default parameters need not be altered.
 The result are example data sets that would be analyzed by linear regression or a Student's t-test, in addition to plotting the graphs and displaying the relevant statistics.
 
-# Using the App
+#### Using the App
 
 The user must then check "no" to the show examples radio widget in order to begin using the application.
 Unfortunately, the ability to upload data and run statistical tests like a statistical calculator would has not been implemented yet.
